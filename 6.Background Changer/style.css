@@ -1,0 +1,33 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button{
+    background-color: rgb(132, 194, 214);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px rgba(1, 85, 240, 0.8);
+    border: none;
+    transition: transform 0.1s linear;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    box-shadow: 0;
+    transform: translate(2px, 2px);
+}

@@ -1,0 +1,52 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    transition: background 0.3s linear,
+    color 0.3s linear;
+}
+
+body.dark{
+    background-color: #1f1f1f;
+    color: white;
+    transition: background 0.3s linear,
+    color 0.3s linear;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+label{
+    cursor: pointer;
+    user-select: none;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    color: white;
+    
+}
+
+body.dark label {
+    background-color: white;
+    color: black;
+}
+
+input {
+    visibility: hidden;
+}
